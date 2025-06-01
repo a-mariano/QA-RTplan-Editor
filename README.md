@@ -1,4 +1,4 @@
-# QA- RTPLAN Editor
+# My DICOM RTPLAN Editor
 
 Este projeto fornece uma interface gráfica para:
 - Visualizar e editar tags DICOM de arquivos RTPLAN.

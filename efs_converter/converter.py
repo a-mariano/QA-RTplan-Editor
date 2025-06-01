@@ -399,8 +399,7 @@ def convert_dcm2efs(file_path, efs_name_path=None):
                 monitor_units = cp.CumulativeMetersetWeight
 
                 # Só pula o último CP em static, escrevendo somente MeterSet; nos demais, escreve tudo
- #               if not ('Static' in FieldTech and cp_count == cp_len):
-                if not ('Static' in FieldTech and cp_count > cp_len):
+                if not ('Static' in FieldTech and cp_count == cp_len):
                     bl_seq = cp.BeamLimitingDevicePositionSequence
                     Xjaw_position, Yjaw_position, mlc_positions = getBeamDelimiters(bl_seq, First_Yjaw_position)
                     efs_control_point_struct(
